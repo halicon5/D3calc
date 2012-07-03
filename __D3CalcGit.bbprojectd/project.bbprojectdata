@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HierarchyData</key>
+	<array>
+		<string>79CA7CC6-9B06-4536-ADBB-05FFB1BE8D3B</string>
+	</array>
+	<key>ProjectItems</key>
+	<dict>
+		<key>79CA7CC6-9B06-4536-ADBB-05FFB1BE8D3B</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>AliasData</key>
+				<data>
+				AAAAAAFgAAIAAQxNYWNpbnRvc2ggSEQAAAAAAAAAAAAA
+				AAAAAADJeTO4SCsAAAAIfI0GRDNjYWxjAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAACa6OMwXsp4AAAAAAAAAAP//
+				//8AAAkgAAAAAAAAAAAAAAAAAAAABVNpdGVzAAAQAAgA
+				AMl5ligAAAARAAgAAMwYBv4AAAABAAwACHyNAAh8hgAA
+				l+0AAgAuTWFjaW50b3NoIEhEOlVzZXJzOnNoYW5lc2lu
+				Z2xldG9uOlNpdGVzOkQzY2FsYwAOAA4ABgBEADMAYwBh
+				AGwAYwAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgA
+				RAASACFVc2Vycy9zaGFuZXNpbmdsZXRvbi9TaXRlcy9E
+				M2NhbGMAABMAAS8AABUAAgAV//8AAA==
+				</data>
+				<key>FileURL</key>
+				<string>file://localhost/Users/shanesingleton/Sites/D3calc/</string>
+				<key>RelativePath</key>
+				<string>./</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>D3calc</string>
+			<key>ItemType</key>
+			<string>FolderReference</string>
+		</dict>
+	</dict>
+	<key>com.barebones.DocumentFormatVersion</key>
+	<integer>5</integer>
+	<key>com.barebones.DocumentType</key>
+	<string>Project</string>
+</dict>
+</plist>

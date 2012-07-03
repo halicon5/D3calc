@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EmbeddedEditorHidden:shanesingleton</key>
+	<false/>
+	<key>ExpandedEditorWidth:shanesingleton:displays([(0, 0), (1920, 1200)])</key>
+	<integer>640</integer>
+	<key>ExpandedItems:shanesingleton</key>
+	<array/>
+	<key>FileFilterID:shanesingleton</key>
+	<string>msng</string>
+	<key>OpenDocuments:shanesingleton</key>
+	<array/>
+	<key>ShowInvisibles:shanesingleton</key>
+	<false/>
+	<key>ShowSCMData:shanesingleton</key>
+	<false/>
+	<key>TextFilesOnly:shanesingleton</key>
+	<true/>
+	<key>ToolbarVisible:shanesingleton</key>
+	<true/>
+	<key>ViewSplitterPosition:shanesingleton</key>
+	<real>0.26011559367179871</real>
+	<key>WindowFrame:shanesingleton:displays([(0, 0), (1920, 1200)])</key>
+	<string>rect(44,0,1144,865)</string>
+</dict>
+</plist>
