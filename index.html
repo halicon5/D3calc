@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>Diablo 3 Gear Calculator</title>
+
+	<link href="D3calc.css" rel="stylesheet" type="text/css" />
+
+
+	
+	<script type="text/javascript" src="D3calc.js"></script>
+
+	<script type="text/javascript" src="D3Defs/D3Defs.js"></script>
+	<script type="text/javascript" src="D3Defs/profDefs.js"></script>
+
+	<script type="text/javascript" src="Manager/charManager_DAT.js"></script>
+	<script type="text/javascript" src="Manager/charManager_SVC.js"></script>
+	<script type="text/javascript" src="Manager/charManager_UI.js"></script>
+	<script type="text/javascript" src="Manager/charGroup_DAT.js"></script>
+	<script type="text/javascript" src="Manager/charGroup_SVC.js"></script>
+	<script type="text/javascript" src="Manager/charGroup_UI.js"></script>
+	<script type="text/javascript" src="Manager/char_DAT.js"></script>
+	<script type="text/javascript" src="Manager/char_SVC.js"></script>
+	<script type="text/javascript" src="Manager/char_UI.js"></script>
+	
+	<script type="text/javascript" src="Profession/charProf_DAT.js"></script>
+	<script type="text/javascript" src="Profession/charProf_SVC.js"></script>
+	<script type="text/javascript" src="Profession/charProf_UI.js"></script>
+
+	<script type="text/javascript" src="Gear/gearSet_DAT.js"></script>
+	<script type="text/javascript" src="Gear/gearSet_SVC.js"></script>
+	<script type="text/javascript" src="Gear/gearSet_UI.js"></script>
+	<script type="text/javascript" src="Gear/gearSlot_DAT.js"></script>
+	
+	<script type="text/javascript" src="Attributes/attribute_DAT.js"></script>
+	<script type="text/javascript" src="Attributes/attribute_SVC.js"></script>
+	<script type="text/javascript" src="Attributes/attribute_UI.js"></script>
+	<script type="text/javascript" src="Attributes/attributeSet_DAT.js"></script>
+	<script type="text/javascript" src="Attributes/attributeSet_SVC.js"></script>
+	<script type="text/javascript" src="Attributes/attributeSet_UI.js"></script>
+	<script type="text/javascript" src="Attributes/calculatedStats_DAT.js"></script>
+	<script type="text/javascript" src="Attributes/calculatedStats_SVC.js"></script>
+	<script type="text/javascript" src="Attributes/calculatedStats_UI.js"></script>
+	
+	<script type="text/javascript" src="panels/panelCharacter_UI.js"></script>
+
+</head>
+
+<body>
+
+
+		<div class='console'>
+			<form id="commandLine" name="commandLine" size="120" onSubmit="D3calc.eval(document.forms['commandLine'].elements['command'].value); updateDebugBox(); document.forms['commandLine'].elements['command'].value = ''; return false;">
+				<input class='console' size="80" name="command" /><input type="submit" value="run" />
+			</form>
+		</div>
+
+<div id="D3calcDisplay"></div>
+
+
+<div class='console'><pre id="debug_feedback"></pre></div>
+
+<script type="text/javascript" src="execute.js"></script>
+
+
+
+</body>
+
+</html>

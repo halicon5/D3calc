@@ -1,0 +1,155 @@
+Basic ideas:
+
+testing changes
+http://www.diablowiki.net/Attributes has a lot of nice calculations
+http://www.diablo3strategyguide.com/effective-hp-calculator
+
+Allow user to compare the effectiveness of various items by distilling effects into the following categories:
+
+Effective Health
+
+
+Vitality = (Base vit + VitFromItems) * sum(vitality multipliers)
+
+Base Health:
+If (char.level < 35) {
+	VIT * 10;
+} 
+else {
+	VIT * (char.level - 10);
+}
+
+Total Health = baseHealth * sum(lifeMultipliers)
+
+
+
+Features:
+	Item library - organized by Types
+	Delete items from library
+	Clone item references from 1st item set to 2nd or 3rd sets
+
+
+
+Types of item effects:
+	iLevel
+	armor
+	str
+	dex
+	intel
+	vit
+	res
+	life
+	critDam
+	critChance
+	itemSpeed
+	thorns
+	globeHealth
+	pickupRange
+	
+
+
+
+slots
+	helm
+	shoulders
+	amulet
+	gloves
+	torso
+	bracers
+	belt
+	leftRing
+	rightRing
+	trousers
+	primaryHand
+	secondaryHand
+	boots
+	
+	
+	
+Calculated Stats:
+
+OFFENSE
+	Damage Increased by Primary Stats		Percentile
+	Damage Increased by Skills				Percentile
+	Attacks per second
+	Critical Hit Chance						Percentile
+	Crit Damage								Percentile
+
+DEFENSE
+	Block amount							
+	Block Chance							Percentile
+	Dodge Chance							percentile
+	Damage reduction						Percentile
+	Resist All
+	Phys Resist
+	Cold resist
+	Fire resist
+	Light resist
+	poison resist
+	arcane resist
+	Crowd Control Reduction					Percentile
+	Missile Dam reduction					Percentile
+	Melee damage reduction					Percentile
+	Thorns
+	
+LIFE
+	Max life
+	Total life bonus	percentile
+	Life per second
+	Life steal
+	life per kill
+	life per Hit
+	health globe healing bonus
+	pickup radius bonus
+	
+ADVENTURE
+	Movement Speed		percentile
+	Gold find			percentile
+	magic find			Percentile
+	bonus exp			Percentile
+	bonus xp per kill	
+	
+CLASS SPECIFIC
+WIZARD
+	Max Arcane power
+	Arcane Power per Second
+	
+MONK
+	Max Spirit
+	Spirit Regen per second
+	
+DEMON HUNTER
+	Max hatred
+	Hatred regen per second
+	max discipline
+	discipline regen per second
+	
+WITCH DOCTOR
+	Max Mana
+	Man Regen per second
+	
+Barbarian	
+	Max Fury
+	
+	
+	
+	
+	
+Starting Attributes
+BASE: 7 + 1 * charLevel
+PRIMARY: BASE + 2 * charLevel
+VITALITY: BASE + charLevel
+
+WIZARD
+	STR	8	+1
+	DEX	8	+1
+	INT	10	+3
+	VIT	9	+2 ?
+	
+MONK
+	STR 8	+1
+	DEX 10	+3
+	INT 8	+1
+	VIT 9	+2
+	
+	

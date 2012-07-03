@@ -1,0 +1,333 @@
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+	background-color: black;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	background-color: #FFFFCC;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input, input[type="text"], input[type="submit"], input[type="submit"]:focus, input[type="button"], input[type="button"]:focus {
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;	
+	font-size: 9px;
+}
+
+select::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner
+{   
+	border : 0px;
+} 
+input[type="text"]:focus, select:focus, input[type="submit"]:focus, input[type="button"]:focus {
+	background-color: #a64242;
+	color: #DDEEEE;
+}
+
+
+
+/************** HERE IS MY CSS **************/
+/* Structural CSS */
+#D3C_TDsideMenus { width: 250; }
+#D3C_TDcontent {width: 1000; }
+
+
+#debug_feedback {background-color: black; clear: all; padding-top: 10px;}
+
+.console {font-family: Monaco;
+		color: green;
+		background-color: black; }
+
+
+
+
+/* CSS for the tabs.  It is best not to fiddle with these */
+.D3CTabSet li { /* do not change */
+	display: inline;
+	margin-right: 5px; /* set additional spacing between tabs as desired */
+	-moz-box-shadow: 5px 5px 3px #a64242;
+	-webkit-box-shadow: 5px 5px 3px #a64242;
+	-moz-border-radius-topleft: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-webkit-border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.D3CTabSet li.D3CNavTab  { /* settings for selected tab */
+	border-bottom: 1px solid #fff;
+	background-color: #fff; 
+}
+
+.D3CTabSet li.D3CNavTab a {
+	padding: 3px 4px; /* set padding (tab size) as desired; FIRST number must change with respect to padding-top (X) above */
+	border: 1px solid #6c6; /* set border COLOR as desired; usually matches border color specified in #tabnav */
+	color: #666; /* set unselected tab link color as desired */
+	text-decoration: none;
+	border-bottom: none;
+	-moz-border-radius-topleft: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-webkit-border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#9c9), to(#696)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #9c9,  #696); /* for firefox 3.6+ */
+}
+
+.D3CTabSet li.activeTab a {
+	background-color: #cfc; /* set unselected tab background color as desired */
+	color: #020;
+	border: 1px solid #5b5;
+	border-bottom: none;
+
+	background: -webkit-gradient(linear, left top, left bottom, from(#797), to(#aca)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #797,  #aca); /* for firefox 3.6+ */
+}
+
+.D3CPanelSet {
+	position: relative;
+	z-index: 1;
+	border: 1px solid #5b5;
+	border-top: 1px;
+	margin-right: 10px;
+	
+	-moz-box-shadow: 5px 5px 3px #a64242;
+	-webkit-box-shadow: 5px 5px 3px #a64242;
+
+	-moz-border-radius-bottomleft: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-bottomright: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.D3Cpanel {
+	padding: 10px;
+	background-color: #cfc;
+	background: -webkit-gradient(linear, left top, left bottom, from(#aca), to(#cfc)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #aca,  #cfc); /* for firefox 3.6+ */
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+
+
+
+
+/* Left menu stuff */
+div.D3CleftMenu { border: 1px solid #5b5;
+				margin: 4px;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				padding: 4px;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;	
+				border-radius: 5px;
+				-moz-box-shadow: 5px 5px 3px #a64242;
+				-webkit-box-shadow: 5px 5px 3px #a64242;
+
+				background: -webkit-gradient(linear, left top, left bottom, from(#9b9), to(#cfc)); /* for webkit browsers */
+				background: -moz-linear-gradient(top,  #9b9,  #cfc); /* for firefox 3.6+ */
+				}
+
+.D3CleftMenu li {margin:2px;	}
+
+.D3CleftMenu li.activeSelection { background-color: #e3ffe3;
+									border: 1px solid #5B5;
+									margin: 2px;
+									-moz-border-radius: 5px;
+									-webkit-border-radius: 5px;
+									border-radius: 5px;
+									font-weight: bold;
+									}
+
+
+
+/*  General editor stuff */
+.D3CeditorGroup { background-color: #e3ffe3;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				padding: 5px;
+				margin: 3px;
+				border: 1px solid #5B5;
+				font-size: .9em;
+}
+
+
+.D3Cheader { font-weight: bold; }
+
+.D3Cmonospace { font-family: Monaco; white-space: pre; }
+
+
+
+/* attributes panel stuff */
+
+#D3C_DIVeditAttributeSet	{width: 350; 
+						display: inline-block;
+						vertical-align: text-top;
+						margin-right: 5px;
+						}
+						
+.D3CattributeSet			{display: table; width: 100%;}
+.D3CattributeSetRow		{display: table-row; margin-bottom: 2px; }
+.D3CattributeSetRow div	{display: table-cell; text-align: center; padding: 2px; border: 1px solid #7D7;}
+.D3CCOLattribName 		{display: table-cell; text-align: right; padding: 2px; border: 1px solid #7D7;}
+.D3CCOLattribRank		{display: table-cell; text-align: center; padding: 2px;}
+
+
+/* skill stuff */
+.D3CskillListCol {display: inline-block; vertical-align: top;}
+.D3CskillSet {display: table; width: 400px; font-size: .9em; background-color:#9a9;}
+.D3CskillSetRow	{display: table-row; margin-bottom: 2px; }
+.D3Cheader.D3CskillSetRow {background-color: #7A7;}
+.D3CskillSetRow div {display: table-cell; text-align: center; padding: 2px; border: 1px solid #7D7; white-space: nowrap; vertical-align: middle; font-size: .9em}
+.D3CCOLskillName 	{display: table-cell; width: 100px; text-align: right; padding: 2px; border: 1px solid #7D7;}
+.D3CCOLskillRank		{display: table-cell; text-align: center; padding: 2px;}
+
+.D3CCOLmasteryName	{display: table-cell; width: 200px; text-align: right; padding: 2px; border: 1px solid #7d7;}
+
+
+div.D3CdisciplineSpells {border: 1px solid #5b5;
+				margin: 4px;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				padding: 4px;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;	
+				background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#AAA)); /* for webkit browsers */
+				background: -moz-linear-gradient(top,  #EEE,  #AAA); /* for firefox 3.6+ */
+				}
+
+.D3CpopupOverlay {
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: .8;
+}
+
+.D3CxpDialogueBox {
+	z-index: 2;
+	position: fixed;
+	top: 50px;
+	left: 300px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+
+	-moz-box-shadow: 5px 5px 3px #000000;
+	-webkit-box-shadow: 5px 5px 3px #000000;
+
+	background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#AAA)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #EEE,  #AAA); /* for firefox 3.6+ */
+
+	border: 1px solid #5B5;
+	width: 450px;
+	height: 400px;
+	padding: 10px;
+	padding-top: 30px;
+	opacity: 1;
+}
+
+.D3CxpDialogueBox div {
+	margin: 3px;
+}
+
+.D3CcloseButton {
+	position: absolute;
+	top: 5px; right: 5px;
+}
+
+table.D3CxpLog tbody tr td { border: 1px solid #7D7; text-align: center; padding: 2px; font-size: .9em;}
+table.D3CxpLog thead tr td { font-weight: bold;  border: 1px solid #7D7; padding: 2px; background-color: #AAA; font-size: .9em; }
+div.D3CxpLog {
+	width: 100%;
+	height: 120px;
+	overflow:auto;
+}
+
+
+.D3CxpSummaryTable {width: 100%;}
+table.D3CxpSummaryTable tr td {
+	font-size: .9em;
+	max-width: 100px;
+}
+
+td.D3CxpLabel { text-align: right;}
+td.D3CxpData {text-align: center;}
+
+table.D3Carmor tr.D3Cheader {background-color: #DDDDDD; }
+table.D3Carmor tr td {border: 1px solid #7D7; padding: 2px; font-size:.9em; text-align: center;}
+td.D3CCOLarmorName {text-align:left;}
+
+
+.D3CinlineBlock	{ display: inline-block; vertical-align: text-top;}
+table.D3CDefenseSummary tr td {border: 1px solid #7D7; padding: 2px; font-size:.9em; text-align: center;}
+
+table.D3CHitZones tr td {border: 1px solid #7D7; padding: 2px; font-size:.9em; text-align: center;}
+
+
+.flagged { background-color: #a64a4a; }
+.highlight { background-color: #4aa64a; }
+
+#D3C_DIVeditCalculatedStats {width: 350; 
+							display: inline-block;
+							vertical-align: text-top;
+							}
+.D3CcalculatedStats { display: table; width: 100% }
+.D3CcalculatedStatsRow { display: table-row; margin-bottom: 2px; }
+.D3CcalculatedStatsRow div {display: table-cell; text-align: center; padding: 2px; border: 1px solid #7D7;}
+.D3CcalculatedStatsRow .D3CCOLstatName 			{display:  table-cell; text-align: right; white-space: nowrap;}
