@@ -7,7 +7,9 @@
 	<key>ExpandedEditorWidth:shanesingleton:displays([(0, 0), (1920, 1200)])</key>
 	<integer>640</integer>
 	<key>ExpandedItems:shanesingleton</key>
-	<array/>
+	<array>
+		<string>79CA7CC6-9B06-4536-ADBB-05FFB1BE8D3B</string>
+	</array>
 	<key>FileFilterID:shanesingleton</key>
 	<string>msng</string>
 	<key>OpenDocuments:shanesingleton</key>
@@ -23,6 +25,6 @@
 	<key>ViewSplitterPosition:shanesingleton</key>
 	<real>0.26011559367179871</real>
 	<key>WindowFrame:shanesingleton:displays([(0, 0), (1920, 1200)])</key>
-	<string>rect(44,0,1144,865)</string>
+	<string>rect(44,477,1144,1342)</string>
 </dict>
 </plist>
