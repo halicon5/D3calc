@@ -1,4 +1,4 @@
-CM.modifierDef = function() {
+D3calc.modifierDef = function() {
 	this.target = ""; // textual description of the data/service object
 	this.group = undefined;
 	this.subGroup = undefined;

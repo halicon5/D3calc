@@ -1,4 +1,4 @@
-CM.charModDAT = function(modDef, modTypeDef) {
+D3calc.charModDAT = function(modDef, modTypeDef) {
 	if (!modDef) {
 		modDef = {};
 	}

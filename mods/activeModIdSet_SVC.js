@@ -2,17 +2,17 @@
 	Mods by id much faster than traversing the entire tree of mods.
 */
 
-CM.activeModIdSetSVC = function(aId, aCharSVC) {
+D3calc.activeModIdSetSVC = function(aId, aCharSVC) {
 	this.parChar = aCharSVC;
 	
 	this.id = aId;
 	this.modSetSvcs = {};
 }
 
-	CM.activeModIdSetSVC.prototype.destroy = CM.destroy;
+	D3calc.activeModIdSetSVC.prototype.destroy = D3calc.destroy;
 	
-	CM.activeModIdSetSVC.prototype.clearModsById = function(id) {
-		if (CM.debug) CM.log("[CALL] CM.activeModIdSetSVC.prototype.clearModsById = function(" + id + ")");
+	D3calc.activeModIdSetSVC.prototype.clearModsById = function(id) {
+		if (D3calc.debug) D3calc.log("[CALL] D3calc.activeModIdSetSVC.prototype.clearModsById = function(" + id + ")");
 		for (key in this.modSetSvcs) {
 			if (this.modSetSvcs[key].clearModsById(id)) {
 				this.modSetSvcs[key].clearModsById(id);
@@ -22,8 +22,8 @@ CM.activeModIdSetSVC = function(aId, aCharSVC) {
 	}
 	
 	
-	CM.activeModIdSetSVC.prototype.applyMod = function (mod, modSetSvc) {
-		if (CM.debug) CM.log("[CALL] CM.activeModIdSetSVC.prototype.applyMod = function(" + mod.id + " " + mod.target + ", modSetSvc)");
+	D3calc.activeModIdSetSVC.prototype.applyMod = function (mod, modSetSvc) {
+		if (D3calc.debug) D3calc.log("[CALL] D3calc.activeModIdSetSVC.prototype.applyMod = function(" + mod.id + " " + mod.target + ", modSetSvc)");
 		if (modSetSvc.target) {
 			this.modSetSvcs[modSetSvc.target] = modSetSvc;
 		}

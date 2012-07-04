@@ -24,9 +24,9 @@ D3calc.attributeSetUI = function(aUI, aManager, div, ul) {
 
 	D3calc.attributeSetUI.prototype.defineAttributeSetFields = function() {
 		if (D3calc.debug) D3calc.log ("D3calc.attributeUI.prototype.defineAttributeSetFields = fucntion()");
-		for (var i = 0; i < kantiaDefs.attributeOrder.length; i++) {
+		for (var i = 0; i < D3Defs.attributeOrder.length; i++) {
 
-			this.subUIs[kantiaDefs.attributeOrder[i]] = new D3calc.attributeUI(this.UI, this.Manager, kantiaDefs.attributeOrder[i], this.attribList);
+			this.subUIs[D3Defs.attributeOrder[i]] = new D3calc.attributeUI(this.UI, this.Manager, D3Defs.attributeOrder[i], this.attribList);
 		}
 	}
 	

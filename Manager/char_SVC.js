@@ -20,9 +20,9 @@ D3calc.charSVC = function(aCharDAT) {
 
 	// magic skills is its own collection but otherwise acts exactly like a skill without exception
 	this.magicSkills = new D3calc.skillCollectionSVC(this.d.magicSkills, this, {}, true );
-		this.magicSkills.defs = kantiaDefs.magicSkillDefs;
-		this.magicSkills.attSkills = kantiaDefs.attributeMagicSkills;
-		this.magicSkills.groups = kantiaDefs.magicGroups;
+		this.magicSkills.defs = D3Defs.magicSkillDefs;
+		this.magicSkills.attSkills = D3Defs.attributeMagicSkills;
+		this.magicSkills.groups = D3Defs.magicGroups;
 		this.magicSkills.initialize();
 
 	this.spells = new D3calc.spellCollectionSVC(this.d.spells, this, {});

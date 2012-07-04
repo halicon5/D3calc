@@ -1,5 +1,5 @@
-CM.charModSetSVC = function(aModSetDAT, itemSCV, aCharSVC, modTypeDef) {
-	if (CM.debug) CM.log("[NEW] CM.charModSetSVC = function() " + aModSetDAT.target);
+D3calc.charModSetSVC = function(aModSetDAT, itemSCV, aCharSVC, modTypeDef) {
+	if (D3calc.debug) D3calc.log("[NEW] D3calc.charModSetSVC = function() " + aModSetDAT.target);
 	this.d = aModSetDAT;
 	this.parChar = aCharSVC;
 	this.modTypeDef = modTypeDef;
@@ -16,30 +16,30 @@ CM.charModSetSVC = function(aModSetDAT, itemSCV, aCharSVC, modTypeDef) {
 	}
 
 	
-	this.CMCLASSNAME = "CM.charModSetSVC";	
+	this.CMCLASSNAME = "D3calc.charModSetSVC";	
 	this.CMOBJNAME = "modifiers." + this.d.target;
 
 }
 
-	CM.charModSetSVC.prototype.destroy = CM.destroy;
+	D3calc.charModSetSVC.prototype.destroy = D3calc.destroy;
 
-	CM.charModSetSVC.prototype.clearModsById = function(id) {
-		if (CM.debug) CM.log("[CALL] CM.charModSetSVC.prototype.clearModsById = function(" + id + "): " + this.CMOBJNAME);
+	D3calc.charModSetSVC.prototype.clearModsById = function(id) {
+		if (D3calc.debug) D3calc.log("[CALL] D3calc.charModSetSVC.prototype.clearModsById = function(" + id + "): " + this.CMOBJNAME);
 		delete this.d.mods[id];
 		this.update();
 	}
 	
-	CM.charModSetSVC.prototype.applyMod = function(mod) {
-		if (CM.debug) CM.log("[CALL] CM.charModSetSVC.prototype.applyMod = function(mod): " + this.CMOBJNAME);
+	D3calc.charModSetSVC.prototype.applyMod = function(mod) {
+		if (D3calc.debug) D3calc.log("[CALL] D3calc.charModSetSVC.prototype.applyMod = function(mod): " + this.CMOBJNAME);
 		if (mod.id) {
-			this.d.mods[mod.id] = new CM.charModDAT(mod, this.modTypeDef);
+			this.d.mods[mod.id] = new D3calc.charModDAT(mod, this.modTypeDef);
 			this.parChar.modifiers.activeMods.applyMod(mod, this);
 		}
 		this.update();
 	}
 	
-	CM.charModSetSVC.prototype.update = function() {
-		if (CM.debug) CM.log("[CALL] CM.charModSetSVC.prototype.update = function(): " + this.CMOBJNAME);
+	D3calc.charModSetSVC.prototype.update = function() {
+		if (D3calc.debug) D3calc.log("[CALL] D3calc.charModSetSVC.prototype.update = function(): " + this.CMOBJNAME);
 		this.reset();
 		for (var m in this.d.mods) {
 			if (this.d.mods[m]) {
@@ -53,8 +53,8 @@ CM.charModSetSVC = function(aModSetDAT, itemSCV, aCharSVC, modTypeDef) {
 		this.setItemModifiers();
 	}
 	
-	CM.charModSetSVC.prototype.reset = function() {
-		if (CM.debug) CM.log("[CALL] CM.charModSetSVC.prototype.reset = function(): " + this.CMOBJNAME);
+	D3calc.charModSetSVC.prototype.reset = function() {
+		if (D3calc.debug) D3calc.log("[CALL] D3calc.charModSetSVC.prototype.reset = function(): " + this.CMOBJNAME);
 		for (var i = 0; i < this.modTypeDef.length; i++) {
 			for (var k in this.modTypeDef[i]) {
 				this.d[k] = 0;
@@ -62,8 +62,8 @@ CM.charModSetSVC = function(aModSetDAT, itemSCV, aCharSVC, modTypeDef) {
 		}
 	}
 	
-	CM.charModSetSVC.prototype.setItemModifiers = function() {
-		if (CM.debug) CM.log("[CALL] CM.charModSetSVC.prototype.setItemModifiers = function(): " + this.CMOBJNAME);
+	D3calc.charModSetSVC.prototype.setItemModifiers = function() {
+		if (D3calc.debug) D3calc.log("[CALL] D3calc.charModSetSVC.prototype.setItemModifiers = function(): " + this.CMOBJNAME);
 		if (this.itemSvc) {
 			for ( var i = 0; i < this.modTypeDef.length; i++) {
 				for (var k in this.modTypeDef[i]) {
@@ -75,6 +75,6 @@ CM.charModSetSVC = function(aModSetDAT, itemSCV, aCharSVC, modTypeDef) {
 			if (this.itemSvc["update"]) this.itemSvc["update"]();
 		}
 		else {
-			if(CM.debug) CM.log("[ERROR] CM.charModSetSVC.prototype.setItemModifiers = function(): " + this.CMOBJNAME + " this.itemSvc is not defined");
+			if(D3calc.debug) D3calc.log("[ERROR] D3calc.charModSetSVC.prototype.setItemModifiers = function(): " + this.CMOBJNAME + " this.itemSvc is not defined");
 		}
 	}

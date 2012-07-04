@@ -1,4 +1,4 @@
-CM.charModSetDAT = function(aTarget, modTypeDef) {
+D3calc.charModSetDAT = function(aTarget, modTypeDef) {
 	this.target = aTarget;
 
 	// this will track the total for all modifiers, adjustments, and multiples	

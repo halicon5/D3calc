@@ -369,20 +369,20 @@ D3calc.calculatedStatsGroupSVC = function(dat, aCharSVC, par) {
 					LW is offset by 8	   MW by 3				 SW by 0
 				*/
 				var stats = this.parChar.d.calcStats.heal;
-				stats.LB.text = (cb > 56) ? "--" : kantiaDefs.healing_rates[Math.floor( ((cb) /4) + 10 )]["text"];
-				stats.MB.text = (cb > 68) ? "--" : kantiaDefs.healing_rates[Math.floor( ((cb) /4) + 7 )]["text"];
-				stats.SB.text = (cb > 88) ? "--" : kantiaDefs.healing_rates[Math.floor( ((cb) /4) + 2 )]["text"];
-				stats.LW.text = (cw > 68) ? "--" : kantiaDefs.healing_rates[Math.floor( ((cw) /4) + 7 )]["text"];
-				stats.MW.text = (cw > 88) ? "--" : kantiaDefs.healing_rates[Math.floor( ((cw) /4) + 2 )]["text"];
-				stats.SW.text = (cw > 88) ? "32/round" : kantiaDefs.healing_rates[Math.floor( (cw)/4 )]["text"];
+				stats.LB.text = (cb > 56) ? "--" : D3Defs.healing_rates[Math.floor( ((cb) /4) + 10 )]["text"];
+				stats.MB.text = (cb > 68) ? "--" : D3Defs.healing_rates[Math.floor( ((cb) /4) + 7 )]["text"];
+				stats.SB.text = (cb > 88) ? "--" : D3Defs.healing_rates[Math.floor( ((cb) /4) + 2 )]["text"];
+				stats.LW.text = (cw > 68) ? "--" : D3Defs.healing_rates[Math.floor( ((cw) /4) + 7 )]["text"];
+				stats.MW.text = (cw > 88) ? "--" : D3Defs.healing_rates[Math.floor( ((cw) /4) + 2 )]["text"];
+				stats.SW.text = (cw > 88) ? "32/round" : D3Defs.healing_rates[Math.floor( (cw)/4 )]["text"];
 
 				// stores the number of minutes required to heal one point.
-				stats.LB.rate = (cb > 56) ? "--" : kantiaDefs.healing_rates[Math.floor( ((cb) /4) + 10 )]["minutes"];
-				stats.MB.rate = (cb > 68) ? "--" : kantiaDefs.healing_rates[Math.floor( ((cb) /4) + 7 )]["minutes"];
-				stats.SB.rate = (cb > 88) ? "--" : kantiaDefs.healing_rates[Math.floor( ((cb) /4) + 2 )]["minutes"];
-				stats.LW.rate = (cw > 68) ? "--" : kantiaDefs.healing_rates[Math.floor( ((cw) /4) + 7 )]["minutes"];
-				stats.MW.rate = (cw > 88) ? "--" : kantiaDefs.healing_rates[Math.floor( ((cw) /4) + 2 )]["minutes"];
-				stats.SW.rate = (cw > 88) ? (1/192) : kantiaDefs.healing_rates[Math.floor( (cw)/4 )]["minutes"];
+				stats.LB.rate = (cb > 56) ? "--" : D3Defs.healing_rates[Math.floor( ((cb) /4) + 10 )]["minutes"];
+				stats.MB.rate = (cb > 68) ? "--" : D3Defs.healing_rates[Math.floor( ((cb) /4) + 7 )]["minutes"];
+				stats.SB.rate = (cb > 88) ? "--" : D3Defs.healing_rates[Math.floor( ((cb) /4) + 2 )]["minutes"];
+				stats.LW.rate = (cw > 68) ? "--" : D3Defs.healing_rates[Math.floor( ((cw) /4) + 7 )]["minutes"];
+				stats.MW.rate = (cw > 88) ? "--" : D3Defs.healing_rates[Math.floor( ((cw) /4) + 2 )]["minutes"];
+				stats.SW.rate = (cw > 88) ? (1/192) : D3Defs.healing_rates[Math.floor( (cw)/4 )]["minutes"];
 			}
 		}
 	}

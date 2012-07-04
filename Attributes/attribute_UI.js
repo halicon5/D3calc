@@ -70,7 +70,7 @@ D3calc.attributeUI = function(aUI, aManager, attrib, ul) {
 		this.rank = rank;
 
 		var label = document.createElement("label");
-		label.innerHTML = kantiaDefs.attributes[this.name].fullname;
+		label.innerHTML = D3Defs.attributes[this.name].fullname;
 		label.setAttribute("class", D3calc.CSSname + "COLattribName");
 		label.setAttribute("for", rank.id);
 		this.label = label;				

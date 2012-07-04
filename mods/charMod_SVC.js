@@ -1,5 +1,5 @@
-CM.charModSVC = function() {
+D3calc.charModSVC = function() {
 
 }
 
-	CM.charModSVC.prototype.destroy = CM.destroy;
+	D3calc.charModSVC.prototype.destroy = D3calc.destroy;
