@@ -1,6 +1,11 @@
 D3calc.charModifiersDAT = function() {
 
-	this.attributes = {};	
+
+	this.calcStats1 = {};
+	this.calcStats2 = {};
+	this.calcStats3 = {};
+	
+/*
 	this.attributes.STR = new D3calc.charModSetDAT("attributes.STR", D3Defs.modTypeDefs.attribute); 
 	this.attributes.SIZ = new D3calc.charModSetDAT("attributes.SIZ", D3Defs.modTypeDefs.attribute); 
 	this.attributes.AGL = new D3calc.charModSetDAT("attributes.AGL", D3Defs.modTypeDefs.attribute); 
@@ -37,10 +42,5 @@ D3calc.charModifiersDAT = function() {
 	
 	this.masteries = {};
 	this.masteries.list = {};
+	*/
 }
-
-/*
-	condition = [always|equipped|sometimes]
-
-	target = a reference to a specific characteristic
-*/

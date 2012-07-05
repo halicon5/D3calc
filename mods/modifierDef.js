@@ -15,3 +15,5 @@ D3calc.modifierDef = function() {
 	this.mult = 0;
 	this.when = "";
 }
+
+

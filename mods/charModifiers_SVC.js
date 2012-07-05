@@ -3,7 +3,11 @@ D3calc.charModifiersSVC = function(aModifiersDAT, aCharSVC) {
 	this.d = aModifiersDAT;
 	this.parChar = aCharSVC;
 
-	this.attributes = {};
+	this.calcStats1 = {};
+	this.calcStats2 = {};
+	this.calcStats3 = {};
+
+/*
 	this.attributes.STR = new D3calc.charModSetSVC(this.d.attributes.STR, this.parChar.attributes.STR, this.parChar, D3Defs.modTypeDefs.attribute);
 	this.attributes.SIZ = new D3calc.charModSetSVC(this.d.attributes.SIZ, this.parChar.attributes.SIZ, this.parChar, D3Defs.modTypeDefs.attribute);
 	this.attributes.AGL = new D3calc.charModSetSVC(this.d.attributes.AGL, this.parChar.attributes.AGL, this.parChar, D3Defs.modTypeDefs.attribute);
@@ -14,7 +18,7 @@ D3calc.charModifiersSVC = function(aModifiersDAT, aCharSVC) {
 	this.attributes.WILL = new D3calc.charModSetSVC(this.d.attributes.WILL, this.parChar.attributes.WILL, this.parChar, D3Defs.modTypeDefs.attribute);
 	this.attributes.SPIR = new D3calc.charModSetSVC(this.d.attributes.SPIR, this.parChar.attributes.SPIR, this.parChar, D3Defs.modTypeDefs.attribute);
 	this.attributes.PER = new D3calc.charModSetSVC(this.d.attributes.PER, this.parChar.attributes.PER, this.parChar, D3Defs.modTypeDefs.attribute);
-	
+
 	this.skills = {};
 	this.skills.list = {};
 	this.initializeDataObjectsByGroup(this.d.skills.list, this.parChar.d.skills.list, "skills.list", D3Defs.modTypeDefs.skill);
@@ -55,6 +59,7 @@ D3calc.charModifiersSVC = function(aModifiersDAT, aCharSVC) {
 	this.masteries.list = {};
 	this.initializeDataObjectsByGroup(this.d.masteries.list, this.parChar.d.masteries.list, "masteries.list", D3Defs.modTypeDefs.masteries);
 	this.initializeServicesByGroup(this.masteries.list, this.parChar.d.modifiers.masteries.list, this.parChar.masteries.list, D3Defs.modTypeDefs.masteries);
+	*/
 
 	this.activeMods = new D3calc.activeModifiersSVC(this, this.parChar);
 }
