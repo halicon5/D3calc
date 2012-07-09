@@ -8,13 +8,13 @@ D3calc.charDAT = function(name) {
 	this.calcStats2 = new D3calc.calculatedStatsDAT();
 	this.calcStats3 = new D3calc.calculatedStatsDAT();
 
-	this.gearSet1 = new D3calc.gearSetDAT("Set 1", this.calcStats1);
-	this.gearSet2 = new D3calc.gearSetDAT("Set 2", this.calcStats2);
-	this.gearSet3 = new D3calc.gearSetDAT("Set 3", this.calcStats3);
+	this.gearSet1 = new D3calc.gearSetDAT("Set 1", "calcStats1");
+	this.gearSet2 = new D3calc.gearSetDAT("Set 2", "calcStats2");
+	this.gearSet3 = new D3calc.gearSetDAT("Set 3", "calcStats3");
 
 
-	this.modifiers = new D3calc.charModifiersDAT();
 /*	
+	this.modifiers = new D3calc.charModifiersDAT();
 	this.skills = new D3calc.skillCollectionDAT("skills");
 	this.writeInSkillHash = {};  // hash table used to quickly look through write in skills.
 	
